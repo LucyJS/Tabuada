@@ -9,7 +9,6 @@ var campoNumero = document.getElementById("numero");
 // elemento html para colocar o resultado dos calculos da tabuada
 var resultadoTabuada = document.getElementById("resultado");
 
-
 // botão de calcular
 var botaoCalcular = document.getElementById("botaoCalcular");
 
@@ -33,10 +32,10 @@ function montarTabuada(){
     for (var contador = 1; contador <= 10; contador++){
 
         // resultado da conta
-        var total = (contador * numero);
+        var total = (numero * contador);
 
         // gerar html para representar o calculo de um número especifico 
-        var htmlCalculoNumero = ("<li>" + contador + " X " + numero  +  " = " + total + "</li>");
+        var htmlCalculoNumero = ("<li>" + numero + " X " + contador  +  " = " + total + "</li>");
 
         // adicionar o html gerado no final do html de resultado da tabuada
         htmlResultado = htmlResultado + htmlCalculoNumero;
