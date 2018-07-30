@@ -9,11 +9,11 @@ var campoNumero = document.getElementById("numero");
 // elemento html para colocar o resultado dos calculos da tabuada
 var resultadoTabuada = document.getElementById("resultado");
 
-// botão de calcular
-var botaoCalcular = document.getElementById("botaoCalcular");
+// botão de Multiplicar
+var botaoMultiplicar = document.getElementById("botaoMultiplicar");
 
 // escutar evento de clique no botão para executar um script
-botaoCalcular.addEventListener("click", montarTabuada);
+botaoMultiplicar.addEventListener("click", montarTabuada);
 
 // função para montar a tabuada
 function montarTabuada(){
