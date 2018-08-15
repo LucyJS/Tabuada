@@ -33,9 +33,9 @@ function montarTabuadaMultiplicacao(){
     // console.log(typeof numero); // descomente essa linha para ver o tipo de variavel no CONSOLE
     
     var htmlResultado = "";
-    htmlResultado = htmlResultado + "Tabuada de Multiplicação" + "<ul>";
+    htmlResultado = htmlResultado + "Tabuada do " + numero + " de Multiplicação!" + "<ul>";
     // contar do número 1 até o número 
-    for (var contador = 1; contador <= 10; contador++){
+    for (var contador = 0; contador <= 10; contador++){
 
         // resultado da conta
         var total = (numero * contador);
@@ -64,7 +64,7 @@ function montarTabuadaDivisao(){
         // console.log(typeof numero); // descomente essa linha para ver o tipo de variavel no CONSOLE
         
         var htmlResultado = "";
-        htmlResultado = htmlResultado + "Tabuada de Divisão" + "<ul>";
+        htmlResultado = htmlResultado + "Tabuada do " + numero + " de Divisão!" + "<ul>";
 
         var numeroDividendo = numero;
 
@@ -101,10 +101,10 @@ function montarTabuadaSoma(){
      // console.log(typeof numero); // descomente essa linha para ver o tipo de variavel no CONSOLE
     
      var htmlResultado = "";
-     htmlResultado = htmlResultado + "Tabuada de Adição" + "<ul>";
+     htmlResultado = htmlResultado + "Tabuada do " + numero + " de Adição!" + "<ul>";
   
       // contar do número 1 até o número
-     for (var contador = 1; contador <= 10; contador++){
+     for (var contador = 0; contador <= 10; contador++){
   
          // resultado da conta
          var total = (numero + contador);
@@ -134,12 +134,12 @@ function montarTabuadaSubtracao(){
      // console.log(typeof numero); // descomente essa linha para ver o tipo de variavel no CONSOLE
     
      var htmlResultado = "";
-     htmlResultado = htmlResultado + "Tabuada de Subtração" + "<ul>";
+     htmlResultado = htmlResultado + "Tabuada do " + numero + " de Subtração!" + "<ul>";
   
      var numeroMinuendo = numero;
 
       // contar do número 1 até o número
-     for (var contador = 0; contador <= 9; contador++){
+     for (var contador = 0; contador <= 10; contador++){
   
          // resultado da conta
          var total = numeroMinuendo - contador;
