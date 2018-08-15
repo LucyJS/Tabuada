@@ -33,7 +33,7 @@ function montarTabuadaMultiplicacao(){
     // console.log(typeof numero); // descomente essa linha para ver o tipo de variavel no CONSOLE
     
     var htmlResultado = "";
-    htmlResultado = htmlResultado + "<ul>";
+    htmlResultado = htmlResultado + "Tabuada de Multiplicação" + "<ul>";
     // contar do número 1 até o número 
     for (var contador = 1; contador <= 10; contador++){
 
@@ -41,7 +41,7 @@ function montarTabuadaMultiplicacao(){
         var total = (numero * contador);
 
         // gerar html para representar o calculo de um número especifico 
-        var htmlCalculoNumero = ("<li>" + numero + " X " + contador  +  " = " + total + "</li>");
+        var htmlCalculoNumero = ("<li>" + numero + " x " + contador  +  " = " + total + "</li>");
 
         // adicionar o html gerado no final do html de resultado da tabuada
         htmlResultado = htmlResultado + htmlCalculoNumero;
@@ -64,7 +64,7 @@ function montarTabuadaDivisao(){
         // console.log(typeof numero); // descomente essa linha para ver o tipo de variavel no CONSOLE
         
         var htmlResultado = "";
-        htmlResultado = htmlResultado + "<ul>";
+        htmlResultado = htmlResultado + "Tabuada de Divisão" + "<ul>";
 
         var numeroDividendo = numero;
 
@@ -101,7 +101,7 @@ function montarTabuadaSoma(){
      // console.log(typeof numero); // descomente essa linha para ver o tipo de variavel no CONSOLE
     
      var htmlResultado = "";
-     htmlResultado = htmlResultado + "<ul>";
+     htmlResultado = htmlResultado + "Tabuada de Adição" + "<ul>";
   
       // contar do número 1 até o número
      for (var contador = 1; contador <= 10; contador++){
@@ -134,22 +134,26 @@ function montarTabuadaSubtracao(){
      // console.log(typeof numero); // descomente essa linha para ver o tipo de variavel no CONSOLE
     
      var htmlResultado = "";
-     htmlResultado = htmlResultado + "<ul>";
+     htmlResultado = htmlResultado + "Tabuada de Subtração" + "<ul>";
   
+     var numeroMinuendo = numero;
+
       // contar do número 1 até o número
-     for (var contador = 1; contador <= 10; contador++){
+     for (var contador = 0; contador <= 9; contador++){
   
          // resultado da conta
-         var total = (numero - contador);
+         var total = numeroMinuendo - contador;
       
              // gerar html para representar o calculo de um número especifico
-             var htmlCalculoNumero = ("<li>" + numero + " - " + contador  +  " = " + total + "</li>");
+             var htmlCalculoNumero = ("<li>" + numeroMinuendo + " - " + contador  +  " = " + total + "</li>");
                      
         // adicionar o html gerado no final do html de resultado da tabuada
          htmlResultado = htmlResultado + htmlCalculoNumero;
-      
+
+         numeroMinuendo = numeroMinuendo + 1;   
      }
      htmlResultado = htmlResultado + "</ul>";
   
      resultadoTabuada.innerHTML = htmlResultado;
   }
+
