@@ -1,5 +1,3 @@
-
-
 body {
     color: rgba(1, 10, 73, 0.74);
     text-align: center;
@@ -11,9 +9,8 @@ input {
     text-align: center;
     padding: 1% 3%;
     background: rgb(115, 145, 136);
-
+    border-radius: 12px;
 }
-
 
 ul {
     text-align: left;
@@ -21,7 +18,10 @@ ul {
 }
 
 li {
-    margin-left: 40%;
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 0%;    
 }
 
 button {
@@ -33,5 +33,3 @@ button {
     font-size:60%;
     border-radius: 12px;
 }
-
-
