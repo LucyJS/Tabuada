@@ -35,7 +35,7 @@ function montarTabuadaMultiplicacao(){
     var htmlResultado = "";
     htmlResultado = htmlResultado + "Tabuada do " + numero + " de Multiplicação!" + "<ul>";
     // contar do número 0 até o número 
-    for (var contador = 1; contador <= 10; contador++){
+    for (var contador = 1; contador <= 20; contador++){
 
         // resultado da conta
         var total = (numero * contador);
@@ -69,7 +69,7 @@ function montarTabuadaDivisao(){
         var numeroDividendo = numero;
 
         // contar do número 1 até o número 
-        for (var contador = 1; contador <= 10; contador++){
+        for (var contador = 1; contador <= 20; contador++){
     
             // resultado da conta
             var total = (numeroDividendo / numero);
@@ -78,7 +78,7 @@ function montarTabuadaDivisao(){
                 // gerar html para representar o calculo de um número especifico 
                 
                 if (numero == 0) {
-                    contador = 10;
+                    contador = 20;
                     var htmlCalculoNumero = ("<li> Não há divisão por " + numero + ". Pois o resultado será infinito! </li>");
                 } else {
                     var htmlCalculoNumero = ("<li>" + numeroDividendo + " / " + numero  +  " = " + total + "</li>");
@@ -112,7 +112,7 @@ function montarTabuadaSoma(){
      htmlResultado = htmlResultado + "Tabuada do " + numero + " de Adição!" + "<ul>";
   
       // contar do número 1 até o número
-     for (var contador = 1; contador <= 10; contador++){
+     for (var contador = 1; contador <= 20; contador++){
   
          // resultado da conta
          var total = (numero + contador);
@@ -147,7 +147,7 @@ function montarTabuadaSubtracao(){
      var numeroMinuendo = numero;
 
       // contar do número 1 até o número
-     for (var contador = 1; contador <= 10; contador++){
+     for (var contador = 1; contador <= 20; contador++){
   
          // resultado da conta
          var total = numeroMinuendo - numero;

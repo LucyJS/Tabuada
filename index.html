@@ -9,25 +9,25 @@
   <meta name="author" content="Lucy">
 
   <link rel="stylesheet" href="css/styles.css?v=1.0">
-
 </head>
 
 <body>
-  <h1>Tabuada<h1>
-  <p>Informe um numero!</p>
+  <div id="content">
+    <h1>Tabuada<h1>
+    <h2>Informe um numero!</h2>
 
- <!-- <label for="numero">numero</label><br>-->
-  <input type="number" min="0" max="100" id="numero" value="5" valuemin="0"><b></b></input>
-  <br> <br> 
-   
-  <button name="botaoMultiplicar" id="botaoMultiplicar"><b>Multiplicar</b></button>
-  <button name="botaoDividir" id="botaoDividir"><b>Dividir</b></button>
-  <button name= "botaoSomar" id="botaoSomar"><b>Somar</b></button>
-  <button name="botaoSubtrair" id="botaoSubtrair"><b>Subtrair</b></button>
-  <br><br>
+  <!-- <label for="numero">numero</label><br>-->
+    <input type="number" min="0" max="100" id="numero" value="5" placeholder="Digite um numero"></input>
+    <div id="buttons">
+      <button name="botaoMultiplicar" id="botaoMultiplicar" class="button">Multiplicar</button>
+      <button name="botaoDividir" id="botaoDividir" class="button">Dividir</button>
+      <button name= "botaoSomar" id="botaoSomar" class="button">Somar</button>
+      <button name="botaoSubtrair" id="botaoSubtrair" class="button">Subtrair</b></button>
+    </div>
 
-  <div id="resultado">Aqui ficará a tabuada!</div>
-  
-  <script src="js/scripts.js"></script>
+    <div id="resultado">Aqui ficará a tabuada!</div>
+    
+    <script src="js/scripts.js"></script>
+  </div>
 </body>
 </html>
